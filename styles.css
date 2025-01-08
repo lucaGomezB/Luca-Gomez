@@ -1,0 +1,21 @@
+* {
+    box-sizing: border-box; 
+}
+.Background{
+    background-color: black;
+    padding: 1rem;
+    border: 1px;
+    color: aliceblue;
+}
+.Titulo {
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(28, 34, 39);
+}
+.PdfViewer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
