@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Check if language is Spanish
     if (userLang.toLowerCase().startsWith('es')) {
         // Define variables with 'let' or 'const'
-        const pdfSource = "LucaValentinoGomezBibiloniCVESCell.pdf";
+        const pdfSource = "LucaValentinoGomezBibiloniCVCell.pdf";
         
         // Update the iframe source
         // This now matches the ID in the HTML above
