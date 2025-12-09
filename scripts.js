@@ -1,23 +1,26 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Get the full browser language (e.g., "en-US", "es-ES", "es")
-    const userLang = navigator.language; 
+    // Get the browser language
+    const userLang = navigator.language || navigator.userLanguage; 
     
-    // Define the PDF file based on language
-
+    // Check if language is Spanish
     if (userLang.toLowerCase().startsWith('es')) {
-        pdfSource = "LucaValentinoGomezBibiloniCVESCell.pdf";
-        titulo = "Bienvenido a mí página!"
-        // Find the iframe element and update its source
+        // Define variables with 'let' or 'const'
+        const pdfSource = "LucaValentinoGomezBibiloniCVESCell.pdf";
+        
+        // Update the iframe source
+        // This now matches the ID in the HTML above
         const iframe = document.getElementById('pdf-viewer');
         if (iframe) {
             iframe.src = pdfSource;
         }
+
+        // Update the title
         const titulo_pagina = document.getElementById('titulo_pagina');
-        if(titulo_pagina){
-            titulo_pagina.textContent = "Bienvenido a mí página!"
+        if (titulo_pagina){
+            titulo_pagina.textContent = "Bienvenido a mi página!"; // Fixed spelling: "mi" instead of "mí"
         }
     }
 
-    // Optional: Update the <html> lang attribute for accessibility/CSS purposes
+    // Update HTML lang attribute
     document.documentElement.lang = userLang.toLowerCase().startsWith('es') ? 'es' : 'en';
 });
