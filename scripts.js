@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     if (userLang.toLowerCase().startsWith('es')) {
         pdfSource = "LucaValentinoGomezBibiloniCVENGCell.pdf";
+        
     }else{
         pdfSource = "LucaValentinoGomezBibiloniCVENGCell.pdf";
     }
@@ -15,7 +16,8 @@ document.addEventListener('DOMContentLoaded', function() {
     if (iframe) {
         iframe.src = pdfSource;
     }
-        
+    
+    
     // Optional: Update the <html> lang attribute for accessibility/CSS purposes
     document.documentElement.lang = userLang.toLowerCase().startsWith('es') ? 'es' : 'en';
 });
